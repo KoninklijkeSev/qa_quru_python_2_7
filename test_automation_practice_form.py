@@ -4,7 +4,6 @@ from selene import be, have
 
 
 def test_practice_form():
-    browser.open('/automation-practice-form')
     browser.should(have.title('ToolsQA'))
     browser.element('[id="firstName"]').type('First name')
     browser.element('[id="lastName"]').type('Last name')
@@ -13,7 +12,7 @@ def test_practice_form():
     browser.element('[id="userNumber"]').type('799988822211')
     browser.element('[id="dateOfBirthInput"]').clear().type('01.01.1990').press_enter()
     browser.element('[id="submit"]').type('English').press_enter()
-    browser.element('[id="uploadPicture"]').send_keys(os.path.abspath('images/picture.jpeg'))
+    browser.element('[id="uploadPicture"]').send_keys(os.path.abspath('resources/picture.jpeg'))
     browser.element('[id = "currentAddress"]').type('Current Address')
     #browser.element('[id="state"]').type('Har').press_enter()
     #browser.element('[id="city"]').type('Ka').press_enter()
