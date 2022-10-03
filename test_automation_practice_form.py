@@ -13,7 +13,7 @@ def test_practice_form():
     browser.element('[id="userNumber"]').type('799988822211')
     browser.element('[id="dateOfBirthInput"]').clear().type('01.01.1990').press_enter()
     browser.element('[id="submit"]').type('English').press_enter()
-    browser.element('[id="uploadPicture"]').send_keys(os.path.abspath('image/picture.jpeg'))
+    browser.element('[id="uploadPicture"]').send_keys(os.path.abspath('images/picture.jpeg'))
     browser.element('[id = "currentAddress"]').type('Current Address')
     #browser.element('[id="state"]').type('Har').press_enter()
     #browser.element('[id="city"]').type('Ka').press_enter()
